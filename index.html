@@ -7,14 +7,29 @@
     <title>Vue App</title>
 
     <!-- Import styles -->
-    <link rel="stylesheet" href=".assets/styles.css">
+    <link rel="stylesheet" href="assets/styles.css">
 
     <!-- Import Vue.js -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
     <div id="app">
-        <h1> {{ product }}</h1>
+        <div class="nav-bar"> </div>
+
+            <div class="product-display">
+                <div class="product-container">
+                    <div class="product-image">
+
+                        <!-- attribute binding v-bind: -->
+                        <img :src="image" alt="">
+                    </div>
+
+                    <div class="product-info">
+                        <h1> {{ product }}</h1>
+                    </div>
+                </div>
+            </div>
+       
     </div>
 
     <!-- Import Js -->
